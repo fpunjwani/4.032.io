@@ -83,10 +83,10 @@ function setup() {
       var gradient = map(weather.currently.temperature,20,90,0,1);
       var sun_color = lerpColor(from, to, gradient);
       fill(sun_color);
-      ellipse(position_sun,60,60,60);
+      ellipse(position_sun,80,60,60);
   } else {
       fill(192);
-      ellipse(50,50,60,60); 
+      ellipse(50,70,60,60); 
     }
 
     // draw land
@@ -125,7 +125,7 @@ function draw() {
   };
   function drawCloud(){
       var x=random(30,400);
-      var y=random(15, 200);
+      var y=random(35, 220);
       fill(255, 128);
       noStroke();
       ellipse(x, y, 30, 30);
