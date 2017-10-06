@@ -29,7 +29,7 @@ var angle;
 function preload() {  // preload() runs once
     // summer=loadImage('https://www.golfknickers.com/v/vspfiles/images/homepage/side_golfers/side-golfer-tprdr01.png');
     // winter=loadImage('http://www.arcticrange.com/sites/default/files/images/northern-lights-pkg.png');
-    fall=loadImage('https://freeclipartimage.com//storage/upload/fall-clip-art/fall-clip-art-36.gif');
+    // fall=loadImage('https://freeclipartimage.com//storage/upload/fall-clip-art/fall-clip-art-36.gif');
     // spring=loadImage('https://i.pinimg.com/originals/03/cc/73/03cc73c97427d9d8408f9a67f09acb05.jpg');
     weather=loadJSON(url,'jsonp');
 }
@@ -125,7 +125,7 @@ function draw() {
   };
   function drawCloud(){
       var x=random(30,400);
-      var y=random(15, 200);
+      var y=random(35, 220);
       fill(255, 128);
       noStroke();
       ellipse(x, y, 30, 30);
@@ -134,8 +134,8 @@ function draw() {
       rect(x-15,y, 28, 29.5);
     
   }
-  fall.resize(220,140);
-  image(fall,50,546);
+//   fall.resize(220,140);
+//   image(fall,50,546);
 
 }
 
