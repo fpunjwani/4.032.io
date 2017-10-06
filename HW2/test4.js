@@ -29,7 +29,7 @@ var angle;
 function preload() {  // preload() runs once
     // summer=loadImage('https://www.golfknickers.com/v/vspfiles/images/homepage/side_golfers/side-golfer-tprdr01.png');
     // winter=loadImage('http://www.arcticrange.com/sites/default/files/images/northern-lights-pkg.png');
-    fall=loadImage('https://freeclipartimage.com//storage/upload/fall-clip-art/fall-clip-art-36.gif');
+    fall=loadImage('https://drive.google.com/open?id=0B-1F-jbBpcLucHZiMmpKUlZPaWc');
     // spring=loadImage('https://i.pinimg.com/originals/03/cc/73/03cc73c97427d9d8408f9a67f09acb05.jpg');
     weather=loadJSON(url,'jsonp');
 }
