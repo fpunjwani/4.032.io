@@ -57,8 +57,8 @@ function setup() {
   
   //SUN 
   //Move sun
-  var sun_rise=new Date(Number(weather.daily.data[0].sunriseTime));
-  var sun_set=new Date(Number(weather.daily.data[0].sunsetTime));
+  var sun_rise=new Date(Number(weather.daily.data[0].sunriseTime)*1000);
+  var sun_set=new Date(Number(weather.daily.data[0].sunsetTime)*1000);
   var datetimeNow = new Date();
   position_sun=map(datetimeNow.getHours(),sun_rise.getHours(),sun_set.getHours()+12,10,400);
   //Is it dark or not outside?
