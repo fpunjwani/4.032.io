@@ -77,7 +77,7 @@ function setup() {
     }
   //draw sun or moon, with changing colors for sun dependent on temp
   //// FOR FUTURE: Make the moon dependent on the moon phase
-  if (datetimeNow<sun_set){
+  if (datetimeNow>sun_set){
       var from = color(255,160,122);
       var to = color(255, 69, 0);
       var gradient = map(weather.currently.temperature,20,90,0,1);
