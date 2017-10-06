@@ -120,12 +120,12 @@ function draw() {
 
   //draw cloud
   ////FOR FUTURE: Make clouds move in the direction of the wind, at a fraction of speed of the wind 
-  for(cloud_counter; cloud_counter<(clouds*30); cloud_counter++){
+  for(cloud_counter; cloud_counter<(clouds*50); cloud_counter++){
       drawCloud();
   };
   function drawCloud(){
       var x=random(30,400);
-      var y=random(35, 220);
+      var y=random(35, 420);
       fill(255, 128);
       noStroke();
       ellipse(x, y, 30, 30);
