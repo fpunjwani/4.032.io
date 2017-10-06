@@ -62,7 +62,7 @@ function setup() {
   var datetimeNow = new Date();
   position_sun=map(datetimeNow.getHours(),sun_rise.getHours(),sun_set.getHours()+12,10,400);
   //Is it dark or not outside?
-  if (datetimeNow<sun_set){
+  if (datetimeNow>sun_set){
       sunny=1;
     } else {
         sunny=0;
