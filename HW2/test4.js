@@ -30,7 +30,11 @@ var angle;
 function preload() {  // preload() runs once
     // summer=loadImage('https://www.golfknickers.com/v/vspfiles/images/homepage/side_golfers/side-golfer-tprdr01.png');
     // winter=loadImage('http://www.arcticrange.com/sites/default/files/images/northern-lights-pkg.png');
+<<<<<<< HEAD
     fall=loadImage('http://thebestfashionblog.com/wp-content/uploads/2013/07/Hugo-Boss-Fall-Winter-2013-2014-Mens-Sportswear-Lookbook-8.png');
+=======
+//     fall=loadImage('https://drive.google.com/open?id=0B-1F-jbBpcLucHZiMmpKUlZPaWc');
+>>>>>>> 02eb57c2892569fd2e05a555f7317516a8c1a111
     // spring=loadImage('https://i.pinimg.com/originals/03/cc/73/03cc73c97427d9d8408f9a67f09acb05.jpg');
     weather=loadJSON(url,'jsonp');
 }
@@ -136,8 +140,13 @@ function draw() {
       rect(x-15,y, 28, 29.5);
     
   }
+<<<<<<< HEAD
   fall.resize(220,400);
   image(fall,50,306);
+=======
+//   fall.resize(220,140);
+//   image(fall,50,546);
+>>>>>>> 02eb57c2892569fd2e05a555f7317516a8c1a111
 
 }
 
