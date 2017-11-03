@@ -154,8 +154,8 @@ function createGraph(name){
         // var point_x_2 = map(Number(years_1[i-1964+1].id),1964,maxYear,margin+5, width-margin);
         // var point_y_2 = map(Number(years_1[i-1964+1].Race[0].value),35, maxValue,height-margin, margin);
         // fill(0);
-        stroke(0);
-        point(point_x,point_y);
+        stroke(0,0,255);
+        // point(point_x,point_y);
         line(point_x,point_y,point_x_2,point_y_2);
         // console.log("for "+point_x+" it's "+point_y+" and then for "+point_x_2+" it's "+point_y_2);
     }
