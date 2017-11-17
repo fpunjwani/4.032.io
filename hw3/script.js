@@ -107,8 +107,8 @@ function createGraph(name){
     var maxValue=0;
     var maxYear=0;
     for(i=0; i<years_1.length;i++){
-        if(years_1[i].Race[0].value>maxValue)
-        maxValue=years_1[i].Race[0].value;
+        if(Number(years_1[i].Race[4].value)>maxValue)
+        maxValue=Number(years_1[i].Race[4].value);
     }
 
     for(j=0; j<years_1.length;j++){
@@ -145,9 +145,9 @@ function createGraph(name){
 
 
         var point_x = map(Number(race_3.year_2[i-1964].label),1964,maxYear,margin+5, width-margin);
-        var point_y = map(Number(race_3.year_2[i-1964].value),25, maxValue,height-margin, margin);
+        var point_y = map(Number(race_3.year_2[i-1964].value),0, maxValue,height-margin, margin);
         var point_x_2 = map(Number(race_3.year_2[i-1964+1].label),1964,maxYear,margin+5, width-margin);
-        var point_y_2 = map(Number(race_3.year_2[i-1964+1].value),25, maxValue,height-margin, margin);
+        var point_y_2 = map(Number(race_3.year_2[i-1964+1].value),0, maxValue,height-margin, margin);
 //oldones
         // var point_x = map(Number(years_1[i-1964].id),1964,maxYear,margin+5, width-margin);
         // var point_y = map(Number(years_1[i-1964].Race[0].value),35, maxValue,height-margin, margin);
@@ -168,9 +168,9 @@ function createGraph(name){
     textStyle(NORMAL);
     var increment = maxValue/5;
     increment = Math.round(increment);
-    for(var i=25; i<maxValue; i+=10){
+    for(var i=0; i<maxValue; i+=10){
         var xLabel = margin-10;
-        var yLabel = map(i,25, maxValue,height-margin, margin);
+        var yLabel = map(i,0, maxValue,height-margin, margin);
         noStroke();
         fill(0);
         text(i, xLabel, yLabel+5);
