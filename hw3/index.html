@@ -27,6 +27,11 @@ body {
 .active{
 	color:#f44336;
 }
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
 
 
 </style>
@@ -34,14 +39,19 @@ body {
 
 </head>
 <body>
-    <h1>A Tale of the American Dream Through The Years</h1>
-    We hold these truths to be sacred & undeniable; that all men are created equal & independent, that from that equal creation they derive rights inherent & inalienable, among which are the preservation of life, & liberty, & the pursuit of happiness.
-    <br><br><br><br><br>
-    <h3>LIFE</h3>
-    <div id="sketch-holder"></div>
     
-    <script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
-    <script language="javascript" type="text/javascript" src="https://readyletsgo.github.io/MIT-4.032/16-CensusData-02/libraries/p5.dom.js"></script> 
-    <script src="script.js" type="text/javascript"></script>
+<h1><i>Homework 3: Census Data</i></h1>
+        <p></p>
+        <a href="sketch.html">Initial Sketch</a><br>
+        <a href="index2.html">Prototype</a><br>
+        <p></p>
+
+        <button onclick="goBack()">Go Back</button>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
 </body>
 </html>
