@@ -1,9 +1,70 @@
 <html>
 <head>
+  <style>
+  div.container{
+      width: 100%;
+      border: 1px;
+      /*display: table;*/
+  }
+  header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+    .flex-container{
+        display: flex;
+        /*display: flex;*/
+        flex-wrap: nowrap;
+        background-color: grey;
+        }
+
+span{ 
+    line-height:300px; 
+    }
+
+    .child{
+        background-color: #f1f1f1;
+        /*display: table-cell;*/
+        vertical-align: middle;
+        display:inline-block;
+        width: 100vh;
+        height: 60vh;
+        margin: 10px;
+        text-align: center;
+        /*vertical-align: middle;*/
+        line-height: 75px;
+        font-size: 30px;
+        border: 10px
+        }
+    
+  </style>
+  
 </head>
 <body>
-<div style='float:left'>stuffs</div>
-<div style='float:right'>stuffs</div>
-<div style='clear:both'></div>`
+    <div class=container>
+        <header>
+            <h1>Fahad's 4.032 Projects<h1>
+        </header>
+    </div>
+    <div class="flex-container">
+        <span></span>
+        <div class="child"> <a href="HW1/HW1.html">Project 1:<br>Twelve Clocks</a></div>
+        <div class="child"><a href="HW2/index.html">Project 2:<br>Weather App</a></div>
+        <div class="child"><a href="hw3/index.html">Project 3:<br>Census Data</a></div>
+        <div class="child"><a href="hw4/code and all/index4.html">Project 4:<br>Sense of Community</a></div>
+
+        <p></p>
+
+        
+    </div>
+    <button onclick="goBack()">Go Back</button>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
 </body>
 </html>
