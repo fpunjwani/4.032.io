@@ -151,7 +151,7 @@ function drawConcepts(idList) {
               currentDiv.class("boxed-concept"+i);
               
               currentDiv.parent("concepts");
-              currentDiv.mouseClicked(drawQuotes(concepts[i].quotes));
+              currentDiv.mouseClicked(drawQuotes(filteredConcepts[i].quotes));
             //   yPos_2+=30;
               // currentDiv.mouseClicked(function() {
               //   drawConcepts(filteredConcepts[i].concepts)
