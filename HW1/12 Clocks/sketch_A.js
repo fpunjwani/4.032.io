@@ -1,6 +1,10 @@
 function setup() {
   createCanvas(720, 400);
   background(220);
+  //window.onresize is basically doing a responsive canvas which changes size as the user changes the window size
+  window.onresize=function(){
+      setSize();
+  }
 }
 
 function draw() {
@@ -25,4 +29,8 @@ function draw() {
     textSize(16);
     // text(s_now*10, 0, 320);
     // text("it is:" + hour()+"hrs" + ", " + minute()+"mins, " + "and " + second()+"secs", 0, 335);
+}
+
+function setSize(){
+    canvas.size(window.innerWidth, window.innerHeight);
 }

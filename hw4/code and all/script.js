@@ -18,7 +18,7 @@ function setup() {
 }
 
 function parseData(){
-    for(var i =1;i<table.getRowCount(); i++){
+    for(var i =0;i<table.getRowCount(); i++){
         var yearRow=table.getRow(i);
         var year_1 ={};
         year_1.id=table.getRow(i).getString(0);
