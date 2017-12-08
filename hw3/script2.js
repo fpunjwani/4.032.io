@@ -5,7 +5,7 @@ var margin=40;
 var xPos = 20;
 var yPos = 130;
 function preload() {
-  table = loadTable("http://fpunjwani.github.io/4.032.io/hw3/CensusBureauData_Education_ALL.csv", "csv");
+  table = loadTable("CensusBureauData_Education_ALL.csv", "csv");
 //   table = loadTable("data/CensusBureauData_Education_ALL.csv", "csv");
 }
 
