@@ -5,10 +5,7 @@ var concepts=[];
 var quotes=[];
 var conceptBoxes = [];
 var quotesBoxes = [];
-<<<<<<< HEAD
 var quotesDataBoxes = [];
-=======
->>>>>>> 9d3a8e7a9688782b3a61a01dc1e89bc3a6c33045
 var xPos=20;
 var yPos=200;
 var xPos_2=260;
@@ -16,11 +13,7 @@ var yPos_2=200;
 
 
 function preload() {
-<<<<<<< HEAD
   table = loadTable("http://fpunjwani.github.io/4.032.io/hw4/data/raw_data_sense_of_community.csv", "csv");
-=======
-  table = loadTable("../data/raw_data_sense_of_community.csv", "csv");
->>>>>>> 9d3a8e7a9688782b3a61a01dc1e89bc3a6c33045
 }
 
 function setup() {
@@ -92,11 +85,8 @@ function parseData(){
         quote.text=table.getRow(i).getString(4);
         quote.person=table.getRow(i).getString(5);
         quote.context=table.getRow(i).getString(6);
-<<<<<<< HEAD
         quote.context2=table.getRow(i).getString(7);
         quote.notes=table.getRow(i).getString(8);
-=======
->>>>>>> 9d3a8e7a9688782b3a61a01dc1e89bc3a6c33045
             append(quotes, quote);
         }    
     }
@@ -106,7 +96,6 @@ function drawThemes() {
             fill(255);
             console.log('drawing');
             var themeHeader = createDiv("Themes");
-<<<<<<< HEAD
             themeHeader.parent("themes");
             themeHeader.class("header");
             // themeHeader.position(xPos, yPos);
@@ -114,27 +103,15 @@ function drawThemes() {
   // setting the style
 //   themeHeader.class("header")
   
-=======
-            // themeHeader.position(xPos, yPos);
-  
-  // setting the style
-  themeHeader.class("header")
-  themeHeader.parent("themes");
->>>>>>> 9d3a8e7a9688782b3a61a01dc1e89bc3a6c33045
 //   yPos +=30;
         //   themeContainer = document.getElementById("themes")
           for (var i=0; i < themes.length; i++) {
             var currentDiv = createDiv(themes[i].title);
             // currentDiv.position(xPos, yPos);
             currentDiv.style("cursor", "hand");
-<<<<<<< HEAD
             // currentDiv.class("listLink");
             currentDiv.parent("themes");
             currentDiv.class("boxed"+i);
-=======
-            currentDiv.class("listLink");
-            currentDiv.parent("themes");
->>>>>>> 9d3a8e7a9688782b3a61a01dc1e89bc3a6c33045
             currentDiv.mouseClicked(drawConcepts(themes[i].concepts));
             // yPos+=30;
           }
@@ -157,10 +134,7 @@ function drawConcepts(idList) {
             // setting the style
             conceptHeader.class("header");
             conceptHeader.parent("concepts");
-<<<<<<< HEAD
             conceptBoxes.push(conceptHeader);
-=======
->>>>>>> 9d3a8e7a9688782b3a61a01dc1e89bc3a6c33045
 
 
             var filteredConcepts = concepts.filter(function(element) {
@@ -174,12 +148,8 @@ function drawConcepts(idList) {
             //   currentDiv.position(xPos_2, yPos_2);
               conceptBoxes.push(currentDiv);
               currentDiv.style("cursor", "hand");
-<<<<<<< HEAD
               currentDiv.class("boxed-concept"+i);
               
-=======
-              currentDiv.class("listLink");
->>>>>>> 9d3a8e7a9688782b3a61a01dc1e89bc3a6c33045
               currentDiv.parent("concepts");
               currentDiv.mouseClicked(drawQuotes(concepts[i].quotes));
             //   yPos_2+=30;
@@ -206,10 +176,7 @@ function drawQuotes(quoteList) {
             // setting the style
             quoteHeader.class("header");
             quoteHeader.parent("quotes")
-<<<<<<< HEAD
             quotesBoxes.push(quoteHeader);
-=======
->>>>>>> 9d3a8e7a9688782b3a61a01dc1e89bc3a6c33045
 
 
             var filteredQuotes = quotes.filter(function(element) {
@@ -220,7 +187,6 @@ function drawQuotes(quoteList) {
             for (var i=0; i < filteredQuotes.length; i++) {
             //   yPosition_2=230+(30*i);  
               var currentDiv;
-<<<<<<< HEAD
               currentDiv = createDiv(i+1+". "+filteredQuotes[i].text);
               currentDiv.style("cursor", "hand");
               currentDiv.class("boxed-quotes");
@@ -229,13 +195,6 @@ function drawQuotes(quoteList) {
               currentDiv.mouseClicked(
                   drawQuotesData(filteredQuotes[i].text)
                   );
-=======
-              currentDiv = createDiv(filteredQuotes[i].text);
-              currentDiv.style("cursor", "hand");
-              currentDiv.class("listLink");
-            //   currentDiv.style('white-space: nowrap');
-              currentDiv.parent("quotes");
->>>>>>> 9d3a8e7a9688782b3a61a01dc1e89bc3a6c33045
             //   currentDiv.mouseClicked(drawMetaData(filteredQuotes[i]));
             //   currentDiv.position(580, yPosition_2);
               quotesBoxes.push(currentDiv);
@@ -248,7 +207,6 @@ function drawQuotes(quoteList) {
             }
           }
         }
-<<<<<<< HEAD
 
 function drawQuotesData(quoteList2) {
     console.log(quoteList2);
@@ -335,5 +293,3 @@ function drawQuotesData(quoteList2) {
             }
           }
         }
-=======
->>>>>>> 9d3a8e7a9688782b3a61a01dc1e89bc3a6c33045
