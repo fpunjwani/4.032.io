@@ -12,7 +12,7 @@ var yPos_2=200;
 
 
 function preload() {
-  table = loadTable("http://fpunjwani.github.io/4.032.io/hw4/data/raw_data_sense_of_community.csv", "csv");
+  table = loadTable("../data/raw_data_sense_of_community.csv", "csv");
 }
 
 function setup() {
